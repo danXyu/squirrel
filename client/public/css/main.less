@@ -1,0 +1,201 @@
+/***********/
+/* Imports */
+/***********/
+
+@import "vendor/bootstrap/bootstrap";
+@import "vendor/font-awesome/font-awesome.min.css";
+@import "vendor/simulator/simulator.css";
+@import "vendor/templates/rival.css";
+
+
+/*****************************/
+/* Special Good-Looking Font */
+/*****************************/
+
+@font-face {
+  font-family: Avenir;
+  src: url(/fonts/avenir-ultralight.otf) format(opentype);
+}
+
+
+/***************/
+/* Scaffolding */
+/***************/
+
+html {
+  zoom: 0.75;
+  -moz-transform: scale(0.75);
+  -moz-transform-origin: 0 0;
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+body {
+  background: transparent;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#particles-js {
+  zoom: 1.33;
+  -moz-transform: scale(1.33);
+  -moz-transform-origin: 0 0;
+  position: absolute;
+  top: 0px;
+  margin: auto 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+/*****************/
+/* Banner Styles */
+/*****************/
+
+.banner-page {
+  display: inline-block;
+  margin-top: 90px;
+  text-align: center;
+  font-family: 'Avenir', Arial, sans-serif;
+
+  .banner-title {
+    font-size: 120px;
+  }
+
+  .banner-subtitle {
+    font-size: 60px;
+  }
+
+  .banner-instructions {
+    margin-top: 60px;
+    font-size: 28px;
+  }
+
+  .banner-phone-number {
+    display: block;
+    margin: 0 auto;
+    padding: 3px 0;
+    font-size: 36px;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid rgba(5, 175, 242, 0.5);
+  }
+
+  .banner-icons {
+    margin: 0 120px;
+    margin-top: 60px;
+  }
+
+  .banner-img {
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    -webkit-border-radius: 99em;
+    -moz-border-radius: 99em;
+    border-radius: 99em;
+    border: 1px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .banner-github {
+    position: relative;
+    z-index: 99;
+    display: block;
+    font-size: 28px;
+    margin-top: 50px;
+  }
+}
+
+
+/*****************/
+/* iPhone Styles */
+/*****************/
+
+#colour {
+  display: inline-block;
+  margin-top: 75px;
+  margin-left: 75px;
+}
+
+.special {
+  text-color: #fff;
+}
+
+#simulator {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#banner {
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  .inner {
+    -moz-animation: reveal-banner 1s 0.25s ease-in-out;
+    -webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+    -o-animation: reveal-banner 1s 0.25s ease-in-out;
+    -ms-animation: reveal-banner 1s 0.25s ease-in-out;
+    animation: reveal-banner 1s 0.25s ease-in-out;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    background: rgba(170, 170, 170, 0.9);
+    color: white;
+    display: inline-block;
+    opacity: 0.5;
+    padding: 3em;
+    text-align: center;
+    margin-top: 15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+
+    header {
+      display: inline-block;
+      border-bottom: solid 2px;
+      border-top: solid 2px;
+      margin: 0 0 2em 0;
+      padding: 3px 0 3px 0;
+
+      h2 {
+        border-bottom: solid 2px;
+        border-top: solid 2px;
+        font-size: 3.5em;
+        font-weight: 900;
+        letter-spacing: 0.2em;
+        margin: 0;
+        padding-left: 0.05em;
+        position: relative;
+        text-transform: uppercase;
+      }
+    }
+
+    p {
+      font-size: 1.25em;
+      letter-spacing: 0.1em;
+      margin: 0;
+      text-transform: uppercase;
+
+      a {
+        color: inherit;
+        font-weight: 400;
+        text-decoration: none;
+      }
+    }
+
+    footer {
+      margin: 2em 0 0 0;
+    }
+  }
+}

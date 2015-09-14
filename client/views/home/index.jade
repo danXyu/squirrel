@@ -1,0 +1,26 @@
+extends ../layout
+
+block content
+
+  include simulator
+
+  .container.banner-page
+    h1.banner-title
+      | Squirrel
+    p.banner-subtitle
+      | Your 24/7 personal investing advisor
+
+    p.banner-instructions
+      | It's simple! Just text anything to the number below to get started.
+    p.banner-phone-number
+      | (877) 355-8541
+
+    .row.banner-icons
+      .col-md-4
+        img.banner-img(src='/img/icon5.png')
+      .col-md-4
+        img.banner-img(src='/img/icon6.png')
+      .col-md-4
+        img.banner-img(src='/img/icon3.png')
+
+    a.banner-github(href='https://github.com/danXyu/squirrel.git') Check out the Github Repository
